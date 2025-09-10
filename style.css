@@ -132,6 +132,9 @@ margin: 0 auto;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 100px;
+   
+    
     
 
     
@@ -142,7 +145,7 @@ margin: 0 auto;
 .grid{
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 30px;
+    grid-template-rows: 300px 300px ;
     grid-gap: 20px 20px;
 }
 
@@ -150,6 +153,15 @@ margin: 0 auto;
     width: 300px;
     height: 300px;
     border-radius: 4px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 180px;
+    background-color: rgb(237, 208, 145);
+    
+    
 }
 
 
@@ -199,7 +211,19 @@ margin: 0 auto;
     .features .feature img{
         width: 70px;
     }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 180px;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
 }
+    
+
+   
 
 @media (min-width :750px ) and (max-width:1150px){
     .container-1 .hero .hero-content h1{
@@ -216,13 +240,15 @@ margin: 0 auto;
         padding: 10px;
 
     }
+    .footer-container .footer-logo{
+        margin-left: -90px;
+    }
     
-
 }
 @media (min-width :1150px ) and (max-width:1500px){
     .grid{
         grid-template-columns: 370px 370px 370px;
-        grid-template-rows: 370px 370px 370px;
+        grid-template-rows: 370px 370px ;
     }
     .grid img{
         width: 370px;
@@ -232,16 +258,20 @@ margin: 0 auto;
 @media (min-width :1500px ) and (max-width:2180px){
     .grid{
         grid-template-columns: 420px 420px  420px ;
-        grid-template-rows: 420px  420px  420px ;
+        grid-template-rows: 420px  420px;
     }
     .grid img{
         width: 420px ;
         height: 420px ;
     }
+
+    .footer-container {
+        display: flex;
+    }
 }@media (max-width:1000px){
     .grid{
-        grid-template-columns: 320px 320px ;
-        grid-template-rows: 320px  320px  320px ;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 320px  320px;
     }
     .grid img{
         width: 320px ;
@@ -251,7 +281,7 @@ margin: 0 auto;
 @media (max-width:758px){
     .grid{
         grid-template-columns: 280px 280px ;
-        grid-template-rows: 280px  280px  280px ;
+        grid-template-rows: 280px  280px;
     }
     .grid img{
         width: 280px ;
